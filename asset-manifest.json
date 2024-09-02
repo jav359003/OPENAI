@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jav359003/OPENAI/static/css/main.d6727ec1.css",
+    "main.js": "/jav359003/OPENAI/static/js/main.f1c84122.js",
+    "index.html": "/jav359003/OPENAI/index.html",
+    "main.d6727ec1.css.map": "/jav359003/OPENAI/static/css/main.d6727ec1.css.map",
+    "main.f1c84122.js.map": "/jav359003/OPENAI/static/js/main.f1c84122.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6727ec1.css",
+    "static/js/main.f1c84122.js"
+  ]
+}
