@@ -1,0 +1,185 @@
+.history-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 75%;
+  background-color: oldlace;
+  padding: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "ColfaxAI";
+  font-weight: bold;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+}
+
+.history-bar h2 {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 2px solid black;
+}
+
+.history-bar.open {
+  transform: translateX(0);
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  z-index: 1000;
+  border: none;
+  padding: 0;
+}
+
+.toggle-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.toggle-btn.close {
+  left: 220px;
+  top: 10px;
+  background-color: transparent;
+  color: rgb(213, 100, 100);
+  font-size: 20px;
+}
+
+.history-bar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-item {
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.history-item:hover {
+  background-color: #eaeaea;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.history-item h6 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.history-item p {
+  font-size: 12px;
+  color: #666;
+  display: none;
+}
+
+.show-all-btn {
+  width: 250px;
+  margin-top: px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.sidebar-options {
+  margin-top: 40px;
+}
+
+.sidebar-options button {
+  display:block;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Popup styling */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.popup-history-item {
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.popup-history-item:hover {
+  background-color: #eaeaea;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.popup-history-item h6 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.popup-history-item p {
+  font-size: 12px;
+  color: #666;
+}
+
+.popup-history-item button {
+  background-color: #10a37f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.close-popup-btn {
+  margin-top: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
